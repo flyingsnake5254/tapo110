@@ -1,0 +1,12 @@
+package com.google.android.gms.internal.vision;
+
+public abstract interface zzbb<V>
+{
+  public abstract V zzu();
+}
+
+
+/* Location:              C:\Users\User\Desktop\decompile\jdgui110\Tapojar.jar!\com\google\android\gms\internal\vision\zzbb.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

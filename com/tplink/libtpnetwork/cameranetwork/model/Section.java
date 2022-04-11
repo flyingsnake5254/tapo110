@@ -1,0 +1,237 @@
+package com.tplink.libtpnetwork.cameranetwork.model;
+
+public enum Section
+{
+  private final String value;
+  
+  static
+  {
+    Section localSection1 = new Section("NAME", 0, "name");
+    NAME = localSection1;
+    Section localSection2 = new Section("TABLE", 1, "table");
+    TABLE = localSection2;
+    Section localSection3 = new Section("SCAN", 2, "scan");
+    SCAN = localSection3;
+    Section localSection4 = new Section("BASIC_INFO", 3, "basic_info");
+    BASIC_INFO = localSection4;
+    Section localSection5 = new Section("CONNECT", 4, "connect");
+    CONNECT = localSection5;
+    Section localSection6 = new Section("GET_CONNECT_STATUS", 5, "get_connect_status");
+    GET_CONNECT_STATUS = localSection6;
+    Section localSection7 = new Section("SYS", 6, "sys");
+    SYS = localSection7;
+    Section localSection8 = new Section("CLOCK_STATUS", 7, "clock_status");
+    CLOCK_STATUS = localSection8;
+    Section localSection9 = new Section("BASIC", 8, "basic");
+    BASIC = localSection9;
+    Section localSection10 = new Section("NTP", 9, "ntp");
+    NTP = localSection10;
+    Section localSection11 = new Section("OSD_INFO", 10, "osd_info");
+    OSD_INFO = localSection11;
+    Section localSection12 = new Section("CONFIG", 11, "config");
+    CONFIG = localSection12;
+    Section localSection13 = new Section("CHANGE_PASSWORD", 12, "change_password");
+    CHANGE_PASSWORD = localSection13;
+    Section localSection14 = new Section("CHANGE_ADMIN_PASSWORD", 13, "change_admin_password");
+    CHANGE_ADMIN_PASSWORD = localSection14;
+    Section localSection15 = new Section("OSD_LABEL_INFO", 14, "label_info");
+    OSD_LABEL_INFO = localSection15;
+    Section localSection16 = new Section("OSD_LABEL_INFO_FIRST", 15, "label_info_1");
+    OSD_LABEL_INFO_FIRST = localSection16;
+    Section localSection17 = new Section("OSD_LOGO", 16, "logo");
+    OSD_LOGO = localSection17;
+    Section localSection18 = new Section("OSD_FONT", 17, "font");
+    OSD_FONT = localSection18;
+    Section localSection19 = new Section("OSD_DATE", 18, "date");
+    OSD_DATE = localSection19;
+    Section localSection20 = new Section("OSD_WEEK", 19, "week");
+    OSD_WEEK = localSection20;
+    Section localSection21 = new Section("HARD_DISK_LOOP", 20, "harddisk");
+    HARD_DISK_LOOP = localSection21;
+    Section localSection22 = new Section("HARD_DISK_INFO", 21, "hd_info");
+    HARD_DISK_INFO = localSection22;
+    Section localSection23 = new Section("HARD_DISK_FORMAT", 22, "format_hd");
+    HARD_DISK_FORMAT = localSection23;
+    Section localSection24 = new Section("HARD_DISK_FORMAT_STATUS", 23, "get_format_status");
+    HARD_DISK_FORMAT_STATUS = localSection24;
+    Section localSection25 = new Section("VIDEO_MAIN", 24, "main");
+    VIDEO_MAIN = localSection25;
+    Section localSection26 = new Section("VIDEO_MINOR", 25, "minor");
+    VIDEO_MINOR = localSection26;
+    Section localSection27 = new Section("SET_RESOLUTION", 26, "set_resolution");
+    SET_RESOLUTION = localSection27;
+    Section localSection28 = new Section("WLAN_DEFAULT_AP", 27, "default_ap");
+    WLAN_DEFAULT_AP = localSection28;
+    Section localSection29 = new Section("GET_NETWORK_INFO", 28, "get_connection_type");
+    GET_NETWORK_INFO = localSection29;
+    Section localSection30 = new Section("MSG_ALARM_INFO", 29, "chn1_msg_alarm_info");
+    MSG_ALARM_INFO = localSection30;
+    Section localSection31 = new Section("MSG_ALARM_PLAN", 30, "chn1_msg_alarm_plan");
+    MSG_ALARM_PLAN = localSection31;
+    Section localSection32 = new Section("CERT_MEDIA_ENCRYPT", 31, "media_encrypt");
+    CERT_MEDIA_ENCRYPT = localSection32;
+    Section localSection33 = new Section("CERT_SERVER_PORT", 32, "vhttpd");
+    CERT_SERVER_PORT = localSection33;
+    Section localSection34 = new Section("CLOUD_BIND", 33, "bind");
+    CLOUD_BIND = localSection34;
+    Section localSection35 = new Section("CLOUD_UNBIND", 34, "unbind");
+    CLOUD_UNBIND = localSection35;
+    Section localSection36 = new Section("CLOUD_DEVICE_STATUS", 35, "device_status");
+    CLOUD_DEVICE_STATUS = localSection36;
+    Section localSection37 = new Section("LENS_MASK_INFO", 36, "lens_mask_info");
+    LENS_MASK_INFO = localSection37;
+    Section localSection38 = new Section("PLAYBACK_DATE_FILTER", 37, "search_year_utility");
+    PLAYBACK_DATE_FILTER = localSection38;
+    Section localSection39 = new Section("PLAYBACK_TIME_FILTER", 38, "search_video_utility");
+    PLAYBACK_TIME_FILTER = localSection39;
+    Section localSection40 = new Section("PLAYBACK_TIME_FILTER_UTC", 39, "search_video_with_utc");
+    PLAYBACK_TIME_FILTER_UTC = localSection40;
+    Section localSection41 = new Section("PLAYBACK_MONTHLY", 40, "search_results");
+    PLAYBACK_MONTHLY = localSection41;
+    Section localSection42 = new Section("PLAYBACK_DAILY", 41, "search_video_results");
+    PLAYBACK_DAILY = localSection42;
+    Section localSection43 = new Section("USER_ID", 42, "get_user_id");
+    USER_ID = localSection43;
+    Section localSection44 = new Section("REBOOT", 43, "reboot");
+    REBOOT = localSection44;
+    Section localSection45 = new Section("RESET", 44, "reset");
+    RESET = localSection45;
+    Section localSection46 = new Section("SOFT_RESET", 45, "soft_reset");
+    SOFT_RESET = localSection46;
+    Section localSection47 = new Section("COMMON", 46, "common");
+    COMMON = localSection47;
+    Section localSection48 = new Section("CHN1_CHANNEL", 47, "chn1_channel");
+    CHN1_CHANNEL = localSection48;
+    Section localSection49 = new Section("ALERT_INFO", 48, "chn1_msg_alarm_info");
+    ALERT_INFO = localSection49;
+    Section localSection50 = new Section("UPGRADE_INFO", 49, "upgrade_info");
+    UPGRADE_INFO = localSection50;
+    Section localSection51 = new Section("NEW_FIRMWARE", 50, "new_firmware");
+    NEW_FIRMWARE = localSection51;
+    Section localSection52 = new Section("MOTION_DET", 51, "motion_det");
+    MOTION_DET = localSection52;
+    Section localSection53 = new Section("MOTION_DETECTION_ADD_REGION", 52, "add_md_regions");
+    MOTION_DETECTION_ADD_REGION = localSection53;
+    Section localSection54 = new Section("REGION_INFO", 53, "region_info");
+    REGION_INFO = localSection54;
+    Section localSection55 = new Section("MOVE", 54, "move");
+    MOVE = localSection55;
+    Section localSection56 = new Section("MOVE_STEP", 55, "movestep");
+    MOVE_STEP = localSection56;
+    Section localSection57 = new Section("CRUISE", 56, "cruise");
+    CRUISE = localSection57;
+    Section localSection58 = new Section("CRUISE_STOP", 57, "cruise_stop");
+    CRUISE_STOP = localSection58;
+    Section localSection59 = new Section("STOP", 58, "stop");
+    STOP = localSection59;
+    Section localSection60 = new Section("PRESET", 59, "preset");
+    PRESET = localSection60;
+    Section localSection61 = new Section("SET_PRESET", 60, "set_preset");
+    SET_PRESET = localSection61;
+    Section localSection62 = new Section("GOTO_PRESET", 61, "goto_preset");
+    GOTO_PRESET = localSection62;
+    Section localSection63 = new Section("REMOVE_PRESET", 62, "remove_preset");
+    REMOVE_PRESET = localSection63;
+    Section localSection64 = new Section("THIRD_ACCOUNT", 63, "third_account");
+    THIRD_ACCOUNT = localSection64;
+    Section localSection65 = new Section("CHANGE_THIRD_ACCOUNT", 64, "change_third_account");
+    CHANGE_THIRD_ACCOUNT = localSection65;
+    Section localSection66 = new Section("VERIFY_THIRD_ACCOUNT", 65, "verify_third_account");
+    VERIFY_THIRD_ACCOUNT = localSection66;
+    Section localSection67 = new Section("IMAGE_SWITCH", 66, "switch");
+    IMAGE_SWITCH = localSection67;
+    Section localSection68 = new Section("MANUAL_CALI", 67, "manual_cali");
+    MANUAL_CALI = localSection68;
+    Section localSection69 = new Section("FIRMWARE_DOWNLOAD", 68, "fw_download");
+    FIRMWARE_DOWNLOAD = localSection69;
+    Section localSection70 = new Section("FIRMWARE_NOTIFY", 69, "check_fw_version");
+    FIRMWARE_NOTIFY = localSection70;
+    Section localSection71 = new Section("CLIENT_INFO", 70, "client_info");
+    CLIENT_INFO = localSection71;
+    Section localSection72 = new Section("SPEAKER", 71, "speaker");
+    SPEAKER = localSection72;
+    Section localSection73 = new Section("MICROPHONE", 72, "microphone");
+    MICROPHONE = localSection73;
+    Section localSection74 = new Section("UPGRADE_STATUS", 73, "upgrade_status");
+    UPGRADE_STATUS = localSection74;
+    Section localSection75 = new Section("WAN", 74, "wan");
+    WAN = localSection75;
+    Section localSection76 = new Section("LAST_ALARM_INFO", 75, "last_alarm_info");
+    LAST_ALARM_INFO = localSection76;
+    Section localSection77 = new Section("APP_COMPONENT_LIST", 76, "app_component_list");
+    APP_COMPONENT_LIST = localSection77;
+    Section localSection78 = new Section("SWITCH", 77, "switch");
+    SWITCH = localSection78;
+    Section localSection79 = new Section("CHECK_DIAGNOSE_STATUS", 78, "check_diagnose_status");
+    CHECK_DIAGNOSE_STATUS = localSection79;
+    Section localSection80 = new Section("COVER", 79, "cover");
+    COVER = localSection80;
+    Section localSection81 = new Section("DETECTION", 80, "detection");
+    DETECTION = localSection81;
+    Section localSection82 = new Section("BABY_CRYING_DETECTION", 81, "bcd");
+    BABY_CRYING_DETECTION = localSection82;
+    Section localSection83 = new Section("COVER_CONFIG_ADD_REGION", 82, "add_cover_regions");
+    COVER_CONFIG_ADD_REGION = localSection83;
+    Section localSection84 = new Section("TARGET_TRACK_INFO", 83, "target_track_info");
+    TARGET_TRACK_INFO = localSection84;
+    Section localSection85 = new Section("MSG_PUSH_INFO", 84, "chn1_msg_push_info");
+    MSG_PUSH_INFO = localSection85;
+    Section localSection86 = new Section("MSG_PUSH_PLAN", 85, "chn1_msg_push_plan");
+    MSG_PUSH_PLAN = localSection86;
+    Section localSection87 = new Section("GET_P2P_SHARE_PWD", 86, "get_p2p_sharepwd");
+    GET_P2P_SHARE_PWD = localSection87;
+    Section localSection88 = new Section("GET_AES_KEY", 87, "get_aes_key");
+    GET_AES_KEY = localSection88;
+    Section localSection89 = new Section("EMPTY", 88, "null");
+    EMPTY = localSection89;
+    Section localSection90 = new Section("RECORD_AUDIO", 89, "record_audio");
+    RECORD_AUDIO = localSection90;
+    Section localSection91 = new Section("TAMPER_DET", 90, "tamper_det");
+    TAMPER_DET = localSection91;
+    Section localSection92 = new Section("ARMING_SCHEDULE", 91, "arming_schedule");
+    ARMING_SCHEDULE = localSection92;
+    Section localSection93 = new Section("ADD_REGIONS", 92, "add_regions");
+    ADD_REGIONS = localSection93;
+    Section localSection94 = new Section("DST", 93, "dst");
+    DST = localSection94;
+    Section localSection95 = new Section("PLAYBACK_SNAPSHOT_LIST", 94, "search_detection_list");
+    PLAYBACK_SNAPSHOT_LIST = localSection95;
+    Section localSection96 = new Section("PLAYBACK_SNAPSHOT_ENABLE", 95, "snapshot_enable");
+    PLAYBACK_SNAPSHOT_ENABLE = localSection96;
+    Section localSection97 = new Section("SUPPLEMENT_LAMP", 96, "supplement_lamp");
+    SUPPLEMENT_LAMP = localSection97;
+    Section localSection98 = new Section("RESET_CONFIG_ONLY", 97, "resetConfigOnly");
+    RESET_CONFIG_ONLY = localSection98;
+    Section localSection99 = new Section("RESET_WIFI_SUPPORTED", 98, "reset_wifi_supported");
+    RESET_WIFI_SUPPORTED = localSection99;
+    Section localSection100 = new Section("UPNPC_INFO", 99, "upnpc_info");
+    UPNPC_INFO = localSection100;
+    Section localSection101 = new Section("UPNP_STATUS", 100, "upnp_status");
+    UPNP_STATUS = localSection101;
+    Section localSection102 = new Section("PUB_IP", 101, "pub_ip");
+    PUB_IP = localSection102;
+    Section localSection103 = new Section("COMMUNICATE", 102, "communicate");
+    COMMUNICATE = localSection103;
+    Section localSection104 = new Section("GET_HTTPS_PSK", 103, "get_https_psk");
+    GET_HTTPS_PSK = localSection104;
+    Section localSection105 = new Section("SERVICE_LIST", 104, "service_list");
+    SERVICE_LIST = localSection105;
+    $VALUES = new Section[] { localSection1, localSection2, localSection3, localSection4, localSection5, localSection6, localSection7, localSection8, localSection9, localSection10, localSection11, localSection12, localSection13, localSection14, localSection15, localSection16, localSection17, localSection18, localSection19, localSection20, localSection21, localSection22, localSection23, localSection24, localSection25, localSection26, localSection27, localSection28, localSection29, localSection30, localSection31, localSection32, localSection33, localSection34, localSection35, localSection36, localSection37, localSection38, localSection39, localSection40, localSection41, localSection42, localSection43, localSection44, localSection45, localSection46, localSection47, localSection48, localSection49, localSection50, localSection51, localSection52, localSection53, localSection54, localSection55, localSection56, localSection57, localSection58, localSection59, localSection60, localSection61, localSection62, localSection63, localSection64, localSection65, localSection66, localSection67, localSection68, localSection69, localSection70, localSection71, localSection72, localSection73, localSection74, localSection75, localSection76, localSection77, localSection78, localSection79, localSection80, localSection81, localSection82, localSection83, localSection84, localSection85, localSection86, localSection87, localSection88, localSection89, localSection90, localSection91, localSection92, localSection93, localSection94, localSection95, localSection96, localSection97, localSection98, localSection99, localSection100, localSection101, localSection102, localSection103, localSection104, localSection105 };
+  }
+  
+  private Section(String paramString)
+  {
+    this.value = paramString;
+  }
+  
+  public final String getValue()
+  {
+    return this.value;
+  }
+}
+
+
+/* Location:              C:\Users\User\Desktop\decompile\jdgui110\Tapojar.jar!\com\tplink\libtpnetwork\cameranetwork\model\Section.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

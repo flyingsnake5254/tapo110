@@ -1,0 +1,23 @@
+package io.netty.handler.codec.http2;
+
+import io.netty.util.internal.StringUtil;
+
+final class DefaultHttp2SettingsAckFrame
+  implements Http2SettingsAckFrame
+{
+  public String name()
+  {
+    return "SETTINGS(ACK)";
+  }
+  
+  public String toString()
+  {
+    return StringUtil.simpleClassName(this);
+  }
+}
+
+
+/* Location:              C:\Users\User\Desktop\decompile\jdgui110\Tapojar.jar!\io\netty\handler\codec\http2\DefaultHttp2SettingsAckFrame.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */
